@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1c1917 50%, #ffb92a 50%);
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    border-radius: 20px;
+    width: 35%;
+    padding: 40px 28px;
+    gap: 20px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top #input {
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    padding: 10px 8px;
+    width: 70%;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.top #search {
+    background-color: #ffb92a;
+    border: none;
+    border: 1px solid #ffb92a;
+    padding: 10px 12px;
+    width: 25%;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.middle .middle__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+.middle__right h3 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.middle__right .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.middle__right .score i {
+    color: #ffb92a;
+}
+
+.middle__right .score p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.middle__right .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.middle__right .info p {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.middle__right .genre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.middle__right .genre p {
+    color: white;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bottom h4 {
+    color: white;
+    margin-bottom: 4px;
+}
+
+.bottom p {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 1400px){
+    #card{
+        width: 42%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #card{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .middle{
+        flex-wrap: wrap;
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #card{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+  .top{
+      flex-direction: column;
+  }
+  #input{
+      margin-bottom: 15px;
+  }
+  #card{
+    width: 65%;
+}
+}
+
+@media only screen and (max-width: 500px){
+    #card{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        height: 105vh;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    #card{
+        width: 80%;
+    }
+}
